@@ -60,3 +60,5 @@ This FastAPI template is designed to jumpstart your API development journey. It 
    - Localhost: [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
    - FastAPI Docs: [http://127.0.0.1:8080/docs](http://127.0.0.1:8080/docs)
    - PgAdmin: [http://127.0.0.1:5050](http://127.0.0.1:5050)
+
+![Screenshot 2023-11-13 at 22 12 50](https://github.com/felipemendes/fastapi-template/assets/3712089/9f137725-313e-43f1-8dd3-83613c6e9a2c)
