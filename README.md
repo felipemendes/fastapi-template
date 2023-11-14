@@ -1,40 +1,52 @@
-# fastapi-template
+# FastAPI Template
 
-**FastAPI, PostgreSQL, Async SQLAlchemy, Async requests with AIOHTTP**
+This FastAPI template is designed to jumpstart your API development journey. It comes pre-configured with FastAPI, PostgreSQL, Async SQLAlchemy, and Async requests with AIOHTTP.
 
-## Dependecies
-* Docker
-* Docker-compse
-* Python >= 3.6
-* Pipenv
+## Dependencies
+- Docker
+- Docker-compose
+- Python >= 3.6
+- Pipenv
 
-## How to run
-Add project path at `PYTHONPATH` variable in `.env` file.
+## How to Run
 
-Start **postgres** database and **pgadmin**
-```shell
-docker-compose up -d
-```
+### Setting up Environment
 
-Start environment
-```shell
-pipenv shell
-```
+1. **Add Project Path:**
+   Add the project path to the `PYTHONPATH` variable in the `.env` file.
 
-Install python dependencies
-```shell
-pipenv install
-```
+2. **Start Pipenv Environment:**
+   ```bash
+   pipenv shell
+   ```
 
-Populate database
-```shell
-python populate.py
-```
+3. **Select Python Interpreter:**
+   Select the Python interpreter using the Visual Studio Code menu.
 
-Start application
-```shell
-uvicorn main:app --port 8080
-```
+### Starting Services
 
-## Compare sync and async views
-There are two versions of assets/day_summary endpoint, so you can compare both performance.
+4. **Start Docker Services:**
+   Start the **postgres** database and **pgadmin**:
+   ```bash
+   docker-compose up -d
+   ```
+
+5. **Initialize Database:**
+   Start the database (if necessary):
+   ```bash
+   python3 database/init_db.py
+   ```
+
+### Running the Application
+
+6. **Start FastAPI Application:**
+   Start the FastAPI application:
+   ```bash
+   uvicorn main:app --port 8080 --reload
+   ```
+
+7. **Access the Application:**
+   Open your browser and navigate to:
+   - Localhost: [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
+   - FastAPI Docs: [http://127.0.0.1:8080/docs](http://127.0.0.1:8080/docs)
+   - PgAdmin: [http://127.0.0.1:5050](http://127.0.0.1:5050)
